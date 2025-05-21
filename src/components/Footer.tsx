@@ -1,5 +1,6 @@
 
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { Heart } from 'lucide-react';
 
 const Footer = () => {
@@ -13,12 +14,12 @@ const Footer = () => {
             </p>
           </div>
           <div className="flex items-center space-x-4">
-            <a href="#" className="text-sm text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-gray-200 transition-colors">
+            <Link to="/privacy" className="text-sm text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-gray-200 transition-colors">
               Privacy
-            </a>
-            <a href="#" className="text-sm text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-gray-200 transition-colors">
+            </Link>
+            <Link to="/terms" className="text-sm text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-gray-200 transition-colors">
               Terms
-            </a>
+            </Link>
             <div className="flex items-center space-x-1">
               <span className="text-sm text-gray-600 dark:text-gray-400">Made with</span>
               <Heart className="h-4 w-4 text-gray-600 dark:text-gray-400" />

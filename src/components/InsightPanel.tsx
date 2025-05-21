@@ -10,7 +10,7 @@ interface InsightPanelProps {
 
 const InsightPanel: React.FC<InsightPanelProps> = ({ insights, isAnalyzing }) => {
   return (
-    <Card className="bg-white/90 dark:bg-gray-800 border border-gray-200 dark:border-gray-700 shadow-md">
+    <Card className="bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 shadow-md">
       <CardHeader>
         <CardTitle className="flex items-center justify-between text-gray-800 dark:text-white">
           <span>Communication Insights</span>
