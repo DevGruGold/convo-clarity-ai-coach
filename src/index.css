@@ -1,3 +1,4 @@
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -106,4 +107,25 @@
 
 .text-gradient {
   @apply bg-clip-text text-transparent;
+}
+
+/* Custom Card Styles for Better Legibility */
+.dashboard-card {
+  @apply bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 text-gray-900 dark:text-gray-100;
+}
+
+.dashboard-card-title {
+  @apply text-gray-800 dark:text-gray-100;
+}
+
+.dashboard-card-description {
+  @apply text-gray-600 dark:text-gray-300;
+}
+
+.dashboard-card-stats {
+  @apply text-gray-900 dark:text-white font-bold;
+}
+
+.dashboard-card-accent {
+  @apply text-blue-600 dark:text-blue-400;
 }
