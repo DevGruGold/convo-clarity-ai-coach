@@ -8,7 +8,7 @@ import { Input } from '@/components/ui/input';
 import { Label } from '@/components/ui/label';
 import { Switch } from '@/components/ui/switch';
 import { RadioGroup, RadioGroupItem } from '@/components/ui/radio-group';
-import { Sliders, User, Bell, Shield, Key } from 'lucide-react';
+import { Sliders, User, Bell, Shield, Key, Glasses } from 'lucide-react';
 
 const Settings = () => {
   return (
@@ -34,6 +34,10 @@ const Settings = () => {
               <TabsTrigger value="privacy" className="text-gray-800 dark:text-gray-200 data-[state=active]:bg-white dark:data-[state=active]:bg-gray-700">
                 <Shield className="h-4 w-4 mr-2" />
                 Privacy
+              </TabsTrigger>
+              <TabsTrigger value="glasses" className="text-gray-800 dark:text-gray-200 data-[state=active]:bg-white dark:data-[state=active]:bg-gray-700">
+                <Glasses className="h-4 w-4 mr-2" />
+                XMRT Glasses
               </TabsTrigger>
               <TabsTrigger value="api" className="text-gray-800 dark:text-gray-200 data-[state=active]:bg-white dark:data-[state=active]:bg-gray-700">
                 <Key className="h-4 w-4 mr-2" />
@@ -73,6 +77,59 @@ const Settings = () => {
                 <div className="flex justify-end">
                   <Button className="bg-blue-600 hover:bg-blue-700 text-white">
                     Save Changes
+                  </Button>
+                </div>
+              </CardContent>
+            </Card>
+          </TabsContent>
+          
+          <TabsContent value="glasses" className="space-y-6">
+            <Card className="bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 shadow-md">
+              <CardHeader>
+                <CardTitle className="text-gray-800 dark:text-gray-100">XMRT Glasses Connection</CardTitle>
+                <CardDescription className="text-gray-600 dark:text-gray-300">
+                  Manage your XMRT Glasses device connection and settings
+                </CardDescription>
+              </CardHeader>
+              <CardContent className="space-y-6">
+                <div className="flex items-center justify-between p-4 border border-gray-200 dark:border-gray-600 rounded-lg">
+                  <div className="flex items-center space-x-3">
+                    <div className="w-3 h-3 bg-red-500 rounded-full"></div>
+                    <div>
+                      <p className="font-medium text-gray-800 dark:text-gray-100">XMRT Glasses Pro</p>
+                      <p className="text-sm text-gray-600 dark:text-gray-400">Not Connected</p>
+                    </div>
+                  </div>
+                  <Button className="bg-blue-600 hover:bg-blue-700 text-white">Connect</Button>
+                </div>
+                
+                <div className="flex items-center justify-between">
+                  <div>
+                    <p className="font-medium text-gray-800 dark:text-gray-100">Auto-Connect on Startup</p>
+                    <p className="text-sm text-gray-600 dark:text-gray-400">Automatically connect to your glasses when available</p>
+                  </div>
+                  <Switch defaultChecked />
+                </div>
+                
+                <div className="flex items-center justify-between">
+                  <div>
+                    <p className="font-medium text-gray-800 dark:text-gray-100">Real-time Streaming</p>
+                    <p className="text-sm text-gray-600 dark:text-gray-400">Stream live video feed from glasses camera</p>
+                  </div>
+                  <Switch />
+                </div>
+                
+                <div className="flex items-center justify-between">
+                  <div>
+                    <p className="font-medium text-gray-800 dark:text-gray-100">Gesture Controls</p>
+                    <p className="text-sm text-gray-600 dark:text-gray-400">Control analysis with gesture commands</p>
+                  </div>
+                  <Switch defaultChecked />
+                </div>
+                
+                <div className="flex justify-end">
+                  <Button className="bg-blue-600 hover:bg-blue-700 text-white">
+                    Save Glasses Settings
                   </Button>
                 </div>
               </CardContent>

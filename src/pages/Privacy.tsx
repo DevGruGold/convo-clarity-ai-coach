@@ -19,7 +19,7 @@ const Privacy = () => {
             <section className="space-y-2">
               <h2 className="text-xl font-semibold text-gray-800 dark:text-gray-100">1. Introduction</h2>
               <p>
-                Welcome to Negoti8's Privacy Policy. This document explains how we collect, use, and protect your personal information when you use our communication analysis platform.
+                Welcome to XMRT Vision's Privacy Policy. This document explains how we collect, use, and protect your personal information when you use our smart glasses communication analysis platform, part of the XMRT.io ecosystem.
               </p>
             </section>
             
@@ -31,9 +31,10 @@ const Privacy = () => {
               <ul className="list-disc pl-6 space-y-1">
                 <li>Account information (name, email, password)</li>
                 <li>Profile information (biography, preferences)</li>
-                <li>Video and audio content for analysis</li>
+                <li>Video and audio content for analysis from XMRT Glasses</li>
                 <li>Communication data and metadata</li>
-                <li>Usage information and analytics</li>
+                <li>Smart glasses device information and settings</li>
+                <li>Usage information and analytics across XMRT ecosystem</li>
               </ul>
             </section>
             
@@ -75,7 +76,7 @@ const Privacy = () => {
             <section className="space-y-2">
               <h2 className="text-xl font-semibold text-gray-800 dark:text-gray-100">6. Contact Us</h2>
               <p>
-                If you have any questions about this Privacy Policy, please contact us at privacy@negoti8.com.
+                If you have any questions about this Privacy Policy, please contact us at privacy@xmrt.io.
               </p>
             </section>
           </CardContent>

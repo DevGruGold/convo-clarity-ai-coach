@@ -2,7 +2,7 @@
 import React from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
-import { Brain, MessageSquare, Settings, Menu } from 'lucide-react';
+import { Glasses, MessageSquare, Settings, Menu, ExternalLink } from 'lucide-react';
 import {
   DropdownMenu,
   DropdownMenuContent,
@@ -22,9 +22,9 @@ const Navbar = () => {
     <header className="sticky top-0 z-50 bg-white dark:bg-gray-900 border-b border-gray-200 dark:border-gray-800 shadow-sm">
       <div className="container mx-auto px-4 flex justify-between items-center h-16">
         <Link to="/" className="flex items-center space-x-2">
-          <Brain className="h-8 w-8 text-gray-800 dark:text-gray-200" />
+          <Glasses className="h-8 w-8 text-gray-800 dark:text-gray-200" />
           <span className="text-xl font-bold text-gray-900 dark:text-gray-100">
-            Negoti8
+            XMRT Vision
           </span>
         </Link>
         
@@ -50,6 +50,15 @@ const Navbar = () => {
           </DropdownMenu>
         ) : (
           <nav className="flex items-center space-x-4">
+            <Button 
+              variant="ghost" 
+              className="text-gray-800 dark:text-gray-200" 
+              asChild
+            >
+              <a href="https://xmrtglasses.vercel.app" target="_blank" rel="noopener noreferrer" className="flex items-center">
+                <ExternalLink className="mr-2 h-4 w-4" /> XMRT Glasses
+              </a>
+            </Button>
             <Button 
               variant={isActive('/dashboard') ? 'default' : 'ghost'} 
               className={isActive('/dashboard') ? 'bg-blue-600 text-white' : 'text-gray-800 dark:text-gray-200'} 

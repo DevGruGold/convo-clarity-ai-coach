@@ -19,14 +19,14 @@ const Terms = () => {
             <section className="space-y-2">
               <h2 className="text-xl font-semibold text-gray-800 dark:text-gray-100">1. Acceptance of Terms</h2>
               <p>
-                By accessing or using Negoti8's services, you agree to be bound by these Terms of Service and all applicable laws and regulations. If you do not agree with any of these terms, you are prohibited from using or accessing this site.
+                By accessing or using XMRT Vision's services, you agree to be bound by these Terms of Service and all applicable laws and regulations. If you do not agree with any of these terms, you are prohibited from using or accessing this service.
               </p>
             </section>
             
             <section className="space-y-2">
               <h2 className="text-xl font-semibold text-gray-800 dark:text-gray-100">2. Description of Service</h2>
               <p>
-                Negoti8 provides AI-powered communication analysis tools and services designed to help users improve their interpersonal communication skills. Our services include real-time video analysis, nonverbal cue detection, and personalized insights.
+                XMRT Vision provides AI-powered communication analysis tools integrated with XMRT Glasses, part of the XMRT.io ecosystem. Our services include real-time smart glasses video analysis, nonverbal cue detection, and personalized communication insights.
               </p>
             </section>
             
@@ -57,7 +57,7 @@ const Terms = () => {
             <section className="space-y-2">
               <h2 className="text-xl font-semibold text-gray-800 dark:text-gray-100">6. Limitation of Liability</h2>
               <p>
-                Negoti8 and its suppliers shall not be liable for any damages arising out of or in connection with the use or inability to use our services. This includes but is not limited to direct, indirect, incidental, consequential, and punitive damages.
+                XMRT Vision and its suppliers shall not be liable for any damages arising out of or in connection with the use or inability to use our services or XMRT Glasses integration. This includes but is not limited to direct, indirect, incidental, consequential, and punitive damages.
               </p>
             </section>
             
@@ -71,7 +71,7 @@ const Terms = () => {
             <section className="space-y-2">
               <h2 className="text-xl font-semibold text-gray-800 dark:text-gray-100">8. Contact Information</h2>
               <p>
-                If you have any questions about these Terms, please contact us at terms@negoti8.com.
+                If you have any questions about these Terms, please contact us at terms@xmrt.io.
               </p>
             </section>
           </CardContent>
