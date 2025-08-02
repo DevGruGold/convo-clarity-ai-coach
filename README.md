@@ -1,4 +1,20 @@
-# Welcome to your Lovable project
+# XMRT Vision - AI Communication Analysis for Smart Glasses
+
+XMRT Vision is an advanced AI-powered application that analyzes facial expressions, body language, and vocal tones through smart glasses in real-time. Part of the revolutionary XMRT.io ecosystem, it provides instant nonverbal communication insights to enhance your interactions.
+
+## 🚀 Key Features
+
+- **Real-time Analysis**: Instant facial expression and body language analysis through XMRT Glasses
+- **AI-Powered Insights**: Powered by Google's Gemini 2.5 Pro for accurate nonverbal communication detection
+- **Smart Glasses Integration**: Seamless connection with XMRT wearable technology
+- **Communication Coaching**: AI-driven feedback to improve your interaction skills
+- **XMRT Ecosystem**: Part of the comprehensive XMRT.io technology platform
+
+## 🔗 XMRT Ecosystem
+
+- **XMRT Vision**: [Current App] - Communication analysis platform
+- **XMRT Glasses**: [Purchase Here](https://xmrtglasses.vercel.app) - Smart glasses hardware
+- **XMRT.io**: [Main Platform](https://xmrt.io) - Complete ecosystem hub
 
 ## Project info
 
