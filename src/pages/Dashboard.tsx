@@ -1,12 +1,15 @@
 
-import React from 'react';
+import React, { useState } from 'react';
 import Layout from '@/components/Layout';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
 import { Calendar, Clock, LineChart, BarChart3, Bookmark, Users, Video } from 'lucide-react';
 import { Button } from '@/components/ui/button';
+import AnalysisSession from '@/components/AnalysisSession';
 
 const Dashboard = () => {
+  const [showAnalysisSession, setShowAnalysisSession] = useState(false);
+
   return (
     <Layout>
       <div className="container mx-auto px-4 py-8">
@@ -17,7 +20,10 @@ const Dashboard = () => {
           </div>
           
           <div className="mt-4 md:mt-0">
-            <Button className="bg-blue-600 hover:bg-blue-700 dark:bg-blue-600 dark:hover:bg-blue-500">
+            <Button 
+              className="bg-blue-600 hover:bg-blue-700 dark:bg-blue-600 dark:hover:bg-blue-500"
+              onClick={() => setShowAnalysisSession(true)}
+            >
               <Video className="mr-2 h-4 w-4" />
               New Analysis Session
             </Button>
@@ -187,6 +193,10 @@ const Dashboard = () => {
           </TabsContent>
         </Tabs>
       </div>
+      
+      {showAnalysisSession && (
+        <AnalysisSession onClose={() => setShowAnalysisSession(false)} />
+      )}
     </Layout>
   );
 };
