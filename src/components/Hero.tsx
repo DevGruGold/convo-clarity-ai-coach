@@ -20,6 +20,17 @@ const Hero = () => {
         XMRT Vision analyzes facial expressions, body language, and vocal tones through your XMRT Glasses in real-time, providing instant insights for better communication.
       </p>
       
+      <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-8">
+        <Button size="lg" className="bg-primary text-primary-foreground hover:bg-primary/90">
+          Start Analysis Session
+        </Button>
+        <Button size="lg" variant="outline" asChild>
+          <a href="https://xmrtglasses.vercel.app" target="_blank" rel="noopener noreferrer">
+            Buy XMRT Glasses
+          </a>
+        </Button>
+      </div>
+      
       <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-4xl mx-auto mt-12">
         <div className="bg-white dark:bg-gray-800 p-6 rounded-xl border border-gray-200 dark:border-gray-700 shadow-sm hover:shadow-md transition-all">
           <div className="bg-gray-100 dark:bg-gray-700 p-3 rounded-full w-12 h-12 mx-auto mb-4 flex items-center justify-center">
